@@ -1,0 +1,91 @@
+hr {
+    margin: 0;
+    color: #000;
+}
+
+.rodape {
+    background-color: #F9F9F9;
+}
+
+.rodape__texto {
+    color: #000;
+    padding: 1.5em 0 2em 2em;
+}
+
+.rodape-lista {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .rodape__texto {
+        display: none;
+    }
+
+    .rodape-lista {
+        display: block;
+    }
+
+    .rodape {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2em;
+        padding: 3em 2em;
+        align-items: start;
+    }
+
+    .rodape-lista {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .rodape-lista__titulo {
+        font-size: 16px;
+        color: var(--titulos-rodape);
+        margin-top: 1.5em;
+    }
+
+    .rodape-lista__link {
+        font-size: 14px;
+        color: var(--subtitulos-rodape);
+        text-decoration: none;
+    }
+
+    .rodape-lista__link:hover {
+        color: var(--verde);
+    }
+
+    .rodape-lista__link:active {
+        color: var(--verde-escuro);
+    }
+
+    /*Colunas que contêm logos/ícones*/
+
+    .rodape-lista--logos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1em;
+        align-items: center;
+    }
+
+    /* Linha de ícones: agrupa os <li> a seguir em linha */
+    .rodape-lista--logos>.rodape-lista__titulo {
+        flex-basis: 100%;
+    }
+
+    .rodape-lista--logos>.rodape-lista__logo {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 0.6rem;
+    }
+
+    .rodape-lista__imagem {
+        width: 40px;
+        height: auto;
+    }
+
+}

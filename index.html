@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlassesAndBooks</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu" class="container__fundo">
+                <span class="cabecalho__menu-hamburguer container__imagem"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Romance</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Drama</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Ficção Científica</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Suspense e Policial</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Ação e Aventura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Poesia/Lírico</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Clássicos</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Autoajuda</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Literatura Infantil</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Literatura Brasileira</a>
+                </li>
+            </ul>
+            <img class="container__imagem" src="./assets/logo.png" alt="Logo do site">
+
+
+            <!--Categorias no aumento de tela-->
+            <h1 class="container__titulo">Glasses<b class="container__titulo--negrito">&</b>Books</h1>
+        </div>
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes__menu" class="opcoes__botao">
+            <label for="opcoes__menu" class="opcoes__fundo">
+                <li class="opcoes__item">CATEGORIAS</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Romance</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Drama</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Ficção Científica</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Suspense e Policial</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Ação e Aventura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Poesia/Lírico</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Clássicos</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Autoajuda</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Literatura Infantil</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Literatura Brasileira</a>
+                </li>
+            </ul>
+
+            <li class="opcoes__item"><a href="#" class="opcoes__link">FAVORITOS</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">MINHA ESTANTE</a></li>
+        </ul>
+
+        <div class="container">
+            <a href="#"><img src="./assets/Favoritos.svg" alt="Meus favoritos"
+                    class="container__imagem container__imagem-transparente"></a>
+            <a href="#" class="container__link">
+                <img src="./assets/Compras.svg" alt="Sacola de compras" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="./assets/Usuario.svg" alt="Perfil do usuário" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
+        </div>
+    </header>
+
+    <section class="banner">
+        <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+        <p class="banner__paragrafo">Com a 'Glasses and Books', o universo literário está ao alcance dos seus dedos.
+        </p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+    </section>
+
+    <!--PRIMEIRO CARROSEL-->
+    <section class="carrosel">
+        <h2 class="carrosel__titulo">OS LEITORES AMAM</h2>
+        <!-- Slider main container -->
+        <div class="carrosel__container">
+            <div class="swiper swiper-1">
+                <!-- Additional required wrapper -->
+                <!-- Pagination -->
+                <div class="swiper-pagination swiper-pagination-1"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="./assets/livros/a culpa e das estrelas.jpg"
+                            alt="Livro A culpa é das estrelas"></div>
+                    <div class="swiper-slide"><img src="./assets/livros/a hipotese do amor.jpg"
+                            alt="Livro A hipótese do amor"></div>
+                    <div class="swiper-slide"><img src="./assets/livros/assassinato no expresso do oriente.jpg"
+                            alt="Livro Assassinato no expresso do oriente"></div>
+                    <div class="swiper-slide"><img src="./assets/livros/cem anos de solidao.jpg"
+                            alt="Livro Cem anos de solidao"></div>
+                    <div class="swiper-slide"><img src="./assets/livros/diario de um banana.jpg"
+                            alt="Livro Diário de um banana"></div>
+                    <div class="swiper-slide"><img src="./assets/livros/e assim que acaba.png"
+                            alt="Livro É assim que acaba"></div>
+                    <div class="swiper-slide"><img src="./assets/livros/extraordinario.jpg" alt="Livro Extraordinário">
+                    </div>
+                    <div class="swiper-slide"><img src="./assets/livros/imperfeitos.jpg" alt="Livro Imperfeitos"></div>
+                    <div class="swiper-slide"><img src="./assets/livros/o menino do pijama listrado.jpg"
+                            alt="Livro O menino do pijama listrado"></div>
+                    <div class="swiper-slide"><img src="./assets/livros/orgulho e preconceito.jpg"
+                            alt="Livro Orgulho e preconceito"></div>
+                    <div class="swiper-slide"><img src="./assets/livros/razao e sensibilidade.jpg"
+                            alt="Livro Razão e sensibilidade"></div>
+                    <div class="swiper-slide"><img src="./assets/livros/Quem e voce alasca.jpg"
+                            alt="Livro Quem é você, Alasca?"></div>
+                    <div class="swiper-slide"><img src="./assets/livros/nao conte a ninguem.jpg"
+                            alt="Livro Não conte a ninguem"></div>
+                    <div class="swiper-slide"><img src="./assets/livros/como eu era antes de voce.jpg"
+                            alt="Livro Como eu era antes de voce"></div>
+                    <div class="swiper-slide"><img src="./assets/livros/cidades de papel.jpg"
+                            alt="Livro Cidades de papel">
+                    </div>
+                </div>
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev swiper-button-prev-1"></div>
+                <div class="swiper-button-next swiper-button-next-1"></div>
+            </div>
+
+
+            <!--Primeira linha (no css)-->
+            <div class="card">
+                <!--Primeira coluna (no css)-->
+                <div class="card__descricao">
+                    <div class="descricao">
+                        <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descricao__titulo-livro">Clássicos que todo mundo deveria ler</h2>
+                        <p class="descricao__paragrafo">Veja uma lista de 15 Clássicos literários que resistiram ao
+                            tempo.</p>
+                    </div>
+                    <!--Segunda coluna (no css)-->
+                    <img src="./assets/classicos.jpg" class="descricao__imagem">
+                </div>
+
+                <!--Segunda linha-->
+                <div class="card__botoes">
+                    <!--Primeira coluna-->
+                    <ul class="botoes">
+                        <li class="botoes__item"><img src="./assets/Favoritos.svg" alt="Favoritar lista"></li>
+                        <li class="botoes__item"><img src="./assets/Compras.svg" alt="Adicionar a sacolinha de compras">
+                        </li>
+                    </ul>
+                    <!--Segunda coluna-->
+                    <a href="#" class="botoes__ancora">Veja a lista</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SEGUNDO CARROSEL (reutilização de variáveis)-->
+    <section class="carrosel">
+        <h2 class="carrosel__titulo">MAIS VENDIDOS</h2>
+
+        <div class="carrosel__container">
+            <div class="swiper swiper-2">
+                <div class="swiper-pagination swiper-pagination-2"></div>
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./assets/livros/a culpa e das estrelas.jpg"
+                            alt="Livro A culpa é das estrelas"></div>
+                    <div class="swiper-slide"><img src="./assets/livros/a hipotese do amor.jpg"
+                            alt="Livro A hipótese do amor"></div>
+                    <div class="swiper-slide"><img src="./assets/livros/assassinato no expresso do oriente.jpg"
+                            alt="Livro Assassinato no expresso do oriente"></div>
+                    <div class="swiper-slide"><img src="./assets/livros/cem anos de solidao.jpg"
+                            alt="Livro Cem anos de solidao"></div>
+                    <div class="swiper-slide"><img src="./assets/livros/diario de um banana.jpg"
+                            alt="Livro Diário de um banana"></div>
+                    <div class="swiper-slide"><img src="./assets/livros/e assim que acaba.png"
+                            alt="Livro É assim que acaba"></div>
+                    <div class="swiper-slide"><img src="./assets/livros/extraordinario.jpg" alt="Livro Extraordinário">
+                    </div>
+                    <div class="swiper-slide"><img src="./assets/livros/imperfeitos.jpg" alt="Livro Imperfeitos"></div>
+                    <div class="swiper-slide"><img src="./assets/livros/o menino do pijama listrado.jpg"
+                            alt="Livro O menino do pijama listrado"></div>
+                    <div class="swiper-slide"><img src="./assets/livros/orgulho e preconceito.jpg"
+                            alt="Livro Orgulho e preconceito"></div>
+                    <div class="swiper-slide"><img src="./assets/livros/razao e sensibilidade.jpg"
+                            alt="Livro Razão e sensibilidade"></div>
+                    <div class="swiper-slide"><img src="./assets/livros/Quem e voce alasca.jpg"
+                            alt="Livro Quem é você, Alasca?"></div>
+                    <div class="swiper-slide"><img src="./assets/livros/nao conte a ninguem.jpg"
+                            alt="Livro Não conte a ninguem"></div>
+                    <div class="swiper-slide"><img src="./assets/livros/como eu era antes de voce.jpg"
+                            alt="Livro Como eu era antes de voce"></div>
+                    <div class="swiper-slide"><img src="./assets/livros/cidades de papel.jpg"
+                            alt="Livro Cidades de papel">
+                    </div>
+                </div>
+                <div class="swiper-button-prev swiper-button-prev-2"></div>
+                <div class="swiper-button-next swiper-button-next-2"></div>
+            </div>
+
+            <div class="card">
+                <div class="card__descricao">
+                    <div class="descricao">
+                        <img src="./assets/Estrelinhas.svg" alt="Avaliação de 5 estrelinhas">
+                        <h3 class="descricao__titulo">Autora do Mês</h3>
+                        <h2 class="descricao__titulo-livro">Colleen Hoover</h2>
+                        <p class="descricao__paragrafo">Escritora americana de best-sellers, conhecida por romances
+                            contemporâneos intensos e emocionais que misturam drama, romance e temas sensíveis como
+                            trauma e superação.</p>
+                    </div>
+                    <img src="./assets/autora do mes.jpg" class="descricao__imagem">
+                </div>
+
+                <div class="card__botoes">
+                    <ul class="botoes">
+                        <li class="botoes__item"><img src="./assets/Favoritos.svg" alt="Favoritar lista"></li>
+                        <li class="botoes__item"><img src="./assets/Compras.svg" alt="Adicionar a sacolinha de compras">
+                        </li>
+                    </ul>
+
+                    <a href="#" class="botoes__ancora">Veja a lista</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="topicos">
+        <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <ul class="topicos__lista">
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Romance</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Literatura Brasileira</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Terror</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Livros baratos</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Ficção & Fantasia</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Auto Ajuda</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Góticos</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Leitor iniciante</a>
+            </li>
+        </ul>
+    </section>
+    <section class="contatos">
+        <div class="contatos__descricao">
+            <h2 class="contatos__titulo">Fique por dentro das novidades!</h2>
+            <p class="contatos__paragrafo">Novos livros, promoções e outros.</p>
+        </div>
+        <input type="email" class="contatos__gmail" placeholder="Cadastre seu e-mail">
+    </section>
+    <hr />
+    <footer class="rodape">
+        <h2 class="rodape__texto">Glasses&Books</h2>
+
+        <!-- Coluna 1: Precisa de ajuda -->
+        <ul class="rodape-lista">
+            <li class="rodape-lista__titulo">Precisa de ajuda?</li>
+            <li class="rodape-lista__item"><a href="#" class="rodape-lista__link">Central de ajuda</a></li>
+            <li class="rodape-lista__item"><a href="#" class="rodape-lista__link">Perguntas Frequentes</a></li>
+            <li class="rodape-lista__item"><a href="#" class="rodape-lista__link">Antendimento</a></li>
+        </ul>
+        <!-- Coluna 2: Institucional -->
+        <ul class="rodape-lista">
+            <li class="rodape-lista__titulo">Institucional</li>
+            <li class="rodape-lista__item"><a href="#" class="rodape-lista__link">Quem somos</a></li>
+            <li class="rodape-lista__item"><a href="#" class="rodape-lista__link">Politícas de privacidade</a></li>
+            <li class="rodape-lista__item"><a href="#" class="rodape-lista__link">Políticas de Cookies</a></li>
+            <li class="rodape-lista__item"><a href="#" class="rodape-lista__link">Politícas de trocas e devoluções</a>
+            </li>
+            <li class="rodape-lista__item"><a href="#" class="rodape-lista__link">Termos de garantia</a></li>
+        </ul>
+
+        <!-- Coluna 3: Formas de Pagamento (logos em linha) -->
+        <ul class="rodape-lista rodape-lista--logos">
+            <li class="rodape-lista__titulo">Formas de Pagamento</li>
+            <li class="rodape-lista__logo">
+                <img src="./assets/pix.jpg" alt="Pagamento via Pix" class="rodape-lista__imagem">
+            </li>
+            <li class="rodape-lista__logo">
+                <img src="./assets/americanExpress (1).jpg" alt="Pagamento via AmericanExpress"
+                    class="rodape-lista__imagem">
+            </li>
+            <li class="rodape-lista__logo">
+                <img src="./assets/elo.jpg" alt="Pagamento via elo" class="rodape-lista__imagem">
+            </li>
+            <li class="rodape-lista__logo">
+                <img src="./assets/hipercard.jpg" alt="Pagamento via Hipercard" class="rodape-lista__imagem">
+            </li>
+            <li class="rodape-lista__logo">
+                <img src="./assets/mastercard.jpg" alt="Pagamento via Mastercard" class="rodape-lista__imagem">
+            </li>
+            <li class="rodape-lista__logo">
+                <img src="./assets/paypal.jpg" alt="Pagamento via PayPal" class="rodape-lista__imagem">
+            </li>
+            <li class="rodape-lista__logo">
+                <img src="./assets/visa.jpg" alt="Pagamento via Visa" class="rodape-lista__imagem">
+            </li>
+        </ul>
+
+        <!-- Coluna 4: Minhas Redes -->
+        <ul class="rodape-lista rodape-lista--logos">
+            <li class="rodape-lista__titulo">Minhas Redes(Jeanviesk)</li>
+            <li class="rodape-lista__logo"><a href="https://github.com/jeanvi12" class="rodape-lista__link"><img
+                        src="./assets/icon-github.png" alt="GitHub"></a></li>
+            <li class="rodape-lista__logo"><a href="https://www.linkedin.com/in/jeanviesk/"
+                    class="rodape-lista__link"><img src="./assets/icon-linkedin.png" alt="LinkedIn"></a></li>
+        </ul>
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        const swiper1 = new Swiper('.swiper-1', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination-1',
+                type: 'bullets',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next-1',
+                prevEl: '.swiper-button-prev-1',
+            },
+        });
+
+        const swiper2 = new Swiper('.swiper-2', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination-2',
+                type: 'bullets',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next-2',
+                prevEl: '.swiper-button-prev-2',
+            },
+        });
+    </script>
+</body>
+
+</html>

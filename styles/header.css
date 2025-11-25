@@ -1,0 +1,219 @@
+.cabecalho__menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url("../assets/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.container__botao:checked~.container__fundo>.cabecalho__menu-hamburguer {
+    background-image: url("../assets/menu aberto.svg");
+}
+
+.container__botao:checked~.container__fundo {
+    background: var(--marrom-degrade);
+    padding: 1.2em 0.3em;
+}
+
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.container__imagem {
+    padding: 0.3em 1em;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 70vw;
+    max-height: 70vh;
+    overflow-y: auto;
+    background-color: var(--branco);
+    z-index: 99;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container__botao:checked~.lista-menu {
+    display: block;
+}
+
+.container__botao {
+    display: none;
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo {
+    color: var(--verde);
+    font-weight: 700;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lista-menu__link {
+    background: var(--marrom-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/*Classes para o media queries*/
+.container__titulo,
+.opcoes,
+.container__texto {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    /*MUDANÇAS NO HEADER*/
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .container__titulo,
+    .container__titulo--negrito {
+        font-family: var(--fonte-josefin);
+        font-size: 30px;
+    }
+
+    .container__titulo {
+        font-weight: 400;
+        display: block;
+    }
+
+    .container__titulo--negrito {
+        font-weight: 700;
+    }
+
+    .opcoes {
+        display: flex;
+    }
+
+    .opcoes__item {
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+
+    .opcoes__link {
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container__imagem-transparente {
+        display: none;
+    }
+
+    .container__imagem {
+        padding: 0.5em 2.5em;
+    }
+
+    .opcoes__botao {
+        display: none;
+    }
+
+    .opcoes__botao:checked~.lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    /* tornar o rótulo interativo e aplicar hover ao item "CATEGORIAS" */
+    .opcoes__fundo {
+        display: inline-block;
+        border-radius: 6px;
+    }
+
+    .opcoes__item {
+        padding: 2em 1em;
+        transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .opcoes__link {
+        transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    /* hover tanto no próprio <li> quanto no <label> que o contém */
+    .opcoes__fundo:hover .opcoes__item,
+    .opcoes__fundo:focus .opcoes__item,
+    .opcoes__item:hover,
+    .opcoes__item:hover .opcoes__link,
+    .opcoes__item:focus .opcoes__link,
+    .opcoes__link:hover {
+        background: var(--marrom-degrade);
+        color: var(--branco);
+        cursor: pointer;
+    }
+
+    /*Ao passar mouse em categorias, o menu aparece*/
+    .opcoes__fundo:hover+.lista-menu,
+    .opcoes__fundo:focus+.lista-menu,
+    #opcoes__menu:checked~.lista-menu,
+    .lista-menu:hover {
+        display: block;
+        /*mostra o menu */
+        width: auto;
+        /* mantém comportamento atual */
+    }
+
+    .opcoes .lista-menu {
+        transition: opacity 0.12s ease;
+        opacity: 1;
+    }
+
+    .lista-menu__item:hover {
+        background: var(--marrom-degrade);
+        color: var(--branco);
+    }
+
+    .lista-menu__item:hover>.lista-menu__link {
+        -webkit-text-fill-color: var(--branco);
+        color: var(--branco);
+        text-decoration: none;
+        font-weight: 500;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .container__texto {
+        display: block;
+        color: var(--preto);
+        font-size: 20px;
+    }
+
+    .cabecalho {
+        padding: 0 2em;
+    }
+
+    .container__imagem {
+        padding: 0.3em 0.5em 0 2em;
+    }
+
+    .opcoes {
+        margin-right: auto;
+    }
+}
