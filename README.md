@@ -1,6 +1,6 @@
-# 📚 Glasses&Books
+# 📚 Glasses&Books - (Mobile-first)
 
-## 📋 Descrição
+## 📋 Descrição 
 
 Loja virtual moderna e responsiva especializada em livros, com carrosséis interativos, sistema de categorias e design elegante.
 (Apenas a parte visual da página inicial)
